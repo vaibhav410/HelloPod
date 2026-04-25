@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confirmation | HelloPod</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="min-h-screen flex flex-col">
+    <header id="navbar" class="fixed top-0 left-0 right-0 z-50 h-[66px] flex items-center px-6 md:px-12 backdrop-blur bg-black/40 border-b border-white/10">
+      <div class="flex items-center w-full justify-between max-w-[1440px] mx-auto">
+        <a href="index.html" class="text-white text-[22px] font-semibold tracking-tight">HelloPod</a>
+        <nav class="nav-desktop hidden md:flex items-center gap-8">
+          <a href="index.html#capabilities" class="text-white/60 text-[14.5px] font-medium tracking-wide">Capabilities</a>
+          <a href="index.html#industries" class="text-white/60 text-[14.5px] font-medium tracking-wide">Industries</a>
+          <a href="index.html#process" class="text-white/60 text-[14.5px] font-medium tracking-wide">Where to Start</a>
+          <a href="cases.html" class="text-white/60 text-[14.5px] font-medium tracking-wide">Insights</a>
+        </nav>
+        <div class="flex items-center gap-6">
+          <button id="mobile-menu-btn" class="md:hidden text-white"><iconify-icon icon="lucide:menu" class="text-2xl"></iconify-icon></button>
+          <a href="booking.html" class="bg-white text-[#111] px-5 py-2 rounded-full text-[14.5px] font-medium hover:bg-gray-100 transition-colors flex items-center gap-2">Book a Call <iconify-icon icon="lucide:arrow-right" class="text-sm"></iconify-icon></a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed inset-0 bg-black z-40 hidden md:hidden">
+      <div class="flex flex-col h-full p-6">
+        <div class="flex justify-between items-center mb-12">
+          <a href="index.html" class="text-white text-[22px] font-semibold tracking-tight">HelloPod</a>
+          <button id="mobile-menu-close" class="text-white p-2"><iconify-icon icon="lucide:x" class="text-2xl"></iconify-icon></button>
+        </div>
+        <nav class="flex flex-col gap-6 font-medium text-lg">
+          <a href="index.html#capabilities" class="text-white/60 py-2">Capabilities</a>
+          <a href="index.html#industries" class="text-white/60 py-2">Industries</a>
+          <a href="index.html#process" class="text-white/60 py-2">Where to Start</a>
+          <a href="cases.html" class="text-white/60 py-2">Insights</a>
+          <a href="index.html#about" class="text-white/60 py-2">About</a>
+          <a href="booking.html" class="bg-white text-[#111] rounded-full px-6 py-3 font-medium text-center mt-4">Book a Call</a>
+        </nav>
+      </div>
+    </div>
+    <main class="flex-1 pt-[66px]">
+      <section class="py-20 lg:py-32 bg-black relative overflow-hidden">
+        <div class="absolute inset-0 z-0">
+          <video autoplay muted loop playsinline class="w-full h-full object-cover opacity-40" poster="https://www.techjays.com/_next/image?url=%2Fimages%2Fvision-cityscape.png&w=1920&q=75">
+            <source src="https://www.techjays.com/videos/hero_new.mp4" type="video/mp4">
+          </video>
+          <div class="absolute inset-0 bg-gradient-to-t from-white via-transparent to-black/30"></div>
+        </div>
+        <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+          <div class="inline-flex items-center justify-center w-20 h-20 bg-white text-[#272a30] rounded-full mb-10 reveal-scale"><iconify-icon icon="lucide:check" class="text-4xl"></iconify-icon></div>
+          <h1 class="text-h2 text-white mb-6 reveal">Your Consultation is Confirmed</h1>
+          <p class="text-white/70 max-w-xl mx-auto mb-12 reveal">We're looking forward to reimagining what's possible with AI together. A confirmation email has been sent to your inbox.</p>
+          <div class="bg-white border border-[#c8c8c8] rounded-xl p-8 md:p-12 text-left mb-12 shadow-sm reveal">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+              <div class="space-y-8">
+                <div><p class="text-[#888] text-[12px] uppercase tracking-widest mb-2">Date & Time</p><p class="text-h3">Thursday, March 14, 2026</p><p class="text-p font-semibold">2:00 PM EST</p></div>
+                <div><p class="text-[#888] text-[12px] uppercase tracking-widest mb-2">Duration</p><p class="text-p">30 Minutes</p></div>
+              </div>
+              <div class="space-y-8">
+                <div><p class="text-[#888] text-[12px] uppercase tracking-widest mb-2">Assigned Consultant</p><p class="text-h3">Sarah Chen</p><p class="text-p text-[#888]">Strategic AI Architect</p></div>
+                <div><p class="text-[#888] text-[12px] uppercase tracking-widest mb-2">Meeting Platform</p><p class="text-p">Zoom Video Communications</p></div>
+              </div>
+            </div>
+            <div class="mt-12 pt-10 border-t border-[#e8e8ec] flex flex-col sm:flex-row gap-4">
+              <a href="#" class="flex-1 inline-flex items-center justify-center gap-2 bg-[#272a30] text-white py-4 rounded-full text-btn hover:opacity-90 transition-opacity btn-ripple"><iconify-icon icon="lucide:video" class="text-lg icon-hover-animate"></iconify-icon>Join via Zoom</a>
+              <a href="#" class="flex-1 inline-flex items-center justify-center gap-2 border border-[#272a30] text-[#272a30] py-4 rounded-full text-btn hover:bg-[#272a30] hover:text-white transition-all btn-ripple"><iconify-icon icon="lucide:calendar-plus" class="text-lg icon-hover-animate"></iconify-icon>Add to Calendar</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-24 bg-[#fafafa]">
+        <div class="max-w-4xl mx-auto px-6">
+          <h2 class="text-h3 text-[#272a30] mb-12 reveal">What happens next?</h2>
+          <div class="grid grid-cols-1 gap-8">
+            <div class="flex items-start gap-6 group reveal"><div class="shrink-0 w-10 h-10 border border-[#272a30] flex items-center justify-center rounded-full text-sm font-bold group-hover:bg-[#272a30] group-hover:text-white transition-colors">01</div><div><h4 class="text-h4 text-[#272a30] mb-2">Review the Email Confirmation</h4><p class="text-p text-[#888]">Check your inbox for a detailed calendar invitation with a preliminary agenda.</p></div></div>
+            <div class="flex items-start gap-6 group reveal"><div class="shrink-0 w-10 h-10 border border-[#272a30] flex items-center justify-center rounded-full text-sm font-bold group-hover:bg-[#272a30] group-hover:text-white transition-colors">02</div><div><h4 class="text-h4 text-[#272a30] mb-2">Join the Virtual Room Early</h4><p class="text-p text-[#888]">Please join the meeting at least 5 minutes early to test your audio and video settings.</p></div></div>
+            <div class="flex items-start gap-6 group reveal"><div class="shrink-0 w-10 h-10 border border-[#272a30] flex items-center justify-center rounded-full text-sm font-bold group-hover:bg-[#272a30] group-hover:text-white transition-colors">03</div><div><h4 class="text-h4 text-[#272a30] mb-2">Come Prepared with Questions</h4><p class="text-p text-[#888]">Have your specific business requirements, technical constraints, and desired AI outcomes ready.</p></div></div>
+          </div>
+        </div>
+      </section>
+      <section class="py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+          <h2 class="text-h3 text-[#272a30] mb-12 reveal">Frequently Asked Questions</h2>
+          <div class="space-y-4">
+            <div class="accordion-item border border-[#e8e8ec] rounded-xl p-6 hover:border-[#c8c8c8] transition-colors cursor-pointer reveal">
+              <div class="flex justify-between items-center"><h4 class="text-p font-semibold">What if I need to reschedule?</h4><iconify-icon icon="lucide:chevron-down" class="text-[#888] accordion-chevron transition-transform"></iconify-icon></div>
+              <div class="accordion-content"><p class="text-p text-[#888]">You can reschedule up to 24 hours before using the link in your confirmation email.</p></div>
+            </div>
+            <div class="accordion-item border border-[#e8e8ec] rounded-xl p-6 hover:border-[#c8c8c8] transition-colors cursor-pointer reveal">
+              <div class="flex justify-between items-center"><h4 class="text-p font-semibold">Should I bring anyone else?</h4><iconify-icon icon="lucide:chevron-down" class="text-[#888] accordion-chevron transition-transform"></iconify-icon></div>
+              <div class="accordion-content"><p class="text-p text-[#888]">We recommend inviting CTOs, VPs of Engineering, or Operations Directors.</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-[#111111] text-white pt-24 pb-12 border-t border-[#272a30]">
+      <div class="max-w-[1440px] mx-auto px-6 md:px-12 flex flex-col gap-24">
+        <div class="flex flex-col md:flex-row justify-between items-start gap-12">
+          <div>
+            <div class="flex items-center gap-2 mb-4">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-white">
+                <path d="M4 12L12 4L20 12L12 20L4 12Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M4 12H20" stroke="currentColor" stroke-width="2"/>
+              </svg>
+              <span class="font-['Sora'] text-2xl tracking-tight">hellopod</span>
+            </div>
+            <p class="font-['Manrope'] text-xl text-[#888888]">The AI Reimagination Company.</p>
+          </div>
+          <div class="flex items-center gap-6">
+            <span class="font-['JetBrains_Mono'] text-xs tracking-widest uppercase text-[#888888]">Follow us on</span>
+            <div class="flex gap-5">
+              <a href="#" class="text-[#c8c8c8] hover:text-white transition-colors"><iconify-icon icon="lucide:twitter" class="text-xl"></iconify-icon></a>
+              <a href="#" class="text-[#c8c8c8] hover:text-white transition-colors"><iconify-icon icon="lucide:linkedin" class="text-xl"></iconify-icon></a>
+              <a href="#" class="text-[#c8c8c8] hover:text-white transition-colors"><iconify-icon icon="lucide:instagram" class="text-xl"></iconify-icon></a>
+              <a href="#" class="text-[#c8c8c8] hover:text-white transition-colors"><iconify-icon icon="lucide:youtube" class="text-xl"></iconify-icon></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 font-['Manrope'] text-sm">
+          <div class="flex flex-col gap-4">
+            <h4 class="font-['JetBrains_Mono'] text-xs tracking-widest uppercase text-[#888888] mb-2">Services</h4>
+            <a href="#" class="text-[#c8c8c8] hover:text-white transition-colors">AI Transformation</a>
+            <a href="#" class="text-[#c8c8c8] hover:text-white transition-colors">AI Strategy</a>
+            <a href="#" class="text-[#c8c8c8] hover:text-white transition-colors">Proof of Concept</a>
+            <a href="#" class="text-[#c8c8c8] hover:text-white transition-colors">Outcome-Based Delivery</a>
+          </div>
+          <div class="flex flex-col gap-4">
+            <h4 class="font-['JetBrains_Mono'] text-xs tracking-widest uppercase text-[#888888] mb-2">Industries</h4>
+            <a href="#" class="text-[#c8c8c8] hover:text-white transition-colors">Manufacturing</a>
+            <a href="#" class="text-[#c8c8c8] hover:text-white transition-colors">Healthcare</a>
+            <a href="#" class="text-[#c8c8c8] hover:text-white transition-colors">Finance</a>
+            <a href="#" class="text-[#c8c8c8] hover:text-white transition-colors">Logistics</a>
+          </div>
+          <div class="flex flex-col gap-4">
+            <h4 class="font-['JetBrains_Mono'] text-xs tracking-widest uppercase text-[#888888] mb-2">Company</h4>
+            <a href="#" class="text-[#c8c8c8] hover:text-white transition-colors">About</a>
+            <a href="booking.html" class="text-[#c8c8c8] hover:text-white transition-colors">Contact</a>
+            <a href="cases.html" class="text-[#c8c8c8] hover:text-white transition-colors">Insights</a>
+          </div>
+          <div class="flex flex-col gap-4 lg:pl-12 lg:border-l border-[#272a30]">
+            <p class="text-[#c8c8c8] leading-relaxed">HelloPod is enabling the world to reimagine what's possible with AI.</p>
+          </div>
+        </div>
+
+        <div class="pt-8 border-t border-[#272a30] flex flex-col md:flex-row justify-between items-center gap-6 font-['Manrope'] text-xs text-[#888888]">
+          <p>© 2026 HelloPod. All rights reserved.</p>
+          <div class="flex gap-6">
+            <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+            <a href="#" class="hover:text-white transition-colors">Terms & Conditions</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+# Ignore large media files (optional - uncomment if needed)
+# *.mp4
+# *.mov
+# *.avi
+
+# OS generated files
+.DS_Store
+Thumbs.db
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node modules (if any)
+node_modules/

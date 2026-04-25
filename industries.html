@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industries | HelloPod - The AI Reimagination Company</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&family=Manrope:wght@400;500&family=Sora:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #111111; }
+        ::-webkit-scrollbar-thumb { background: #272a30; border-radius: 999px;}
+    </style>
+</head>
+<body class="bg-[#111111] text-white antialiased selection:bg-white selection:text-[#111111] overflow-x-hidden font-['Manrope']">
+
+    <nav class="fixed top-0 w-full z-50 bg-[#111111]/80 backdrop-blur-[20px] border-b-[1px] border-white/10 transition-all duration-300">
+        <div class="px-6 md:px-12 py-5 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2 group">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-white group-hover:opacity-80 transition-opacity">
+                    <path d="M4 12L12 4L20 12L12 20L4 12Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                    <path d="M4 12H20" stroke="currentColor" stroke-width="2"/>
+                </svg>
+                <span class="font-['Sora'] text-xl tracking-tight text-white">hellopod</span>
+            </a>
+
+            <div class="hidden lg:flex items-center gap-10 font-['Manrope'] text-sm">
+                <a href="capabilities.html" class="text-white hover:text-[#c8c8c8] transition-colors">Capabilities</a>
+                <a href="#" class="text-white hover:text-[#c8c8c8] transition-colors flex items-center gap-1">Industries <i data-lucide="chevron-down" class="w-3 h-3"></i></a>
+                <a href="#" class="text-white hover:text-[#c8c8c8] transition-colors">Where to Start</a>
+                <a href="#" class="text-white hover:text-[#c8c8c8] transition-colors">Insights</a>
+            </div>
+
+            <div class="hidden lg:flex items-center gap-8 font-['Manrope'] text-sm">
+                <a href="#" class="text-white hover:text-[#c8c8c8] transition-colors">About</a>
+                <a href="booking.html" class="bg-white text-[#111111] rounded-full px-5 py-2.5 font-medium hover:bg-gray-200 transition-colors flex items-center gap-2">Book a Call <i data-lucide="arrow-right" class="w-3 h-3"></i></a>
+            </div>
+
+            <button id="mobile-menu-btn" class="lg:hidden text-white"><i data-lucide="menu" class="w-6 h-6"></i></button>
+        </div>
+    </nav>
+
+    <header class="pt-40 pb-24 px-6 md:px-12 bg-[#111111]">
+        <div class="max-w-[1440px] mx-auto">
+            <p class="font-['JetBrains_Mono'] text-xs tracking-widest uppercase text-[#888888] mb-6 animate-on-scroll">Industries We Serve</p>
+            <h1 class="font-['Sora'] text-5xl md:text-7xl lg:text-8xl font-light tracking-tighter leading-[1.05] text-white animate-on-scroll delay-100">
+                AI solutions for every industry.
+            </h1>
+            <p class="font-['Manrope'] text-xl text-[#c8c8c8] mt-8 max-w-2xl animate-on-scroll delay-200">
+                We partner with visionary leaders across industries to unlock the full transformational power of AI for their organizations.
+            </p>
+        </div>
+    </header>
+
+    <main class="bg-white text-[#111111]">
+        <!-- Manufacturing -->
+        <section class="border-b-[2px] border-[#c8c8c8] py-24 px-6 md:px-12">
+            <div class="max-w-[1440px] mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                    <div>
+                        <p class="font-['JetBrains_Mono'] text-xs tracking-widest uppercase text-[#888888] mb-4">Manufacturing</p>
+                        <h2 class="font-['Sora'] text-4xl md:text-5xl tracking-tight mb-6">Smart Manufacturing</h2>
+                        <p class="font-['Manrope'] text-xl text-[#272a30] mb-8">
+                            Transform your production floor with AI-powered predictive maintenance, quality inspection, and demand forecasting.
+                        </p>
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-green-600"></i> Predictive Maintenance</li>
+                            <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-green-600"></i> Computer Vision Quality Inspection</li>
+                            <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-green-600"></i> Demand Forecasting</li>
+                            <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-green-600"></i> Production Optimization</li>
+                        </ul>
+                        <a href="booking.html" class="inline-flex items-center gap-2 text-[#111111] border-b border-[#111111] pb-1 hover:opacity-70">Request Demo <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                    </div>
+                    <div class="bg-[#fafafa] p-8 md:p-12 rounded-xl">
+                        <p class="font-['JetBrains_Mono'] text-xs tracking-widest uppercase text-[#888888] mb-6">Case Study</p>
+                        <h3 class="font-['Sora'] text-2xl mb-4">Industrial Computer Vision</h3>
+                        <p class="text-[#272a30] mb-6">High-frequency visual transformer models integrated directly into assembly workflows for 99.8% precision rate.</p>
+                        <div class="grid grid-cols-2 gap-8 pt-8 border-t border-[#e8e8ec]">
+                            <div><p class="text-3xl font-light">99.8%</p><p class="text-xs text-[#888]">Precision Rate</p></div>
+                            <div><p class="text-3xl font-light">3.2x</p><p class="text-xs text-[#888]">Throughput</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Healthcare -->
+        <section class="border-b-[2px] border-[#c8c8c8] py-24 px-6 md:px-12">
+            <div class="max-w-[1440px] mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                    <div>
+                        <p class="font-['JetBrains_Mono'] text-xs tracking-widest uppercase text-[#888888] mb-4">Healthcare</p>
+                        <h2 class="font-['Sora'] text-4xl md:text-5xl tracking-tight mb-6">AI-Powered Healthcare</h2>
+                        <p class="font-['Manrope'] text-xl text-[#272a30] mb-8">
+                            Improve patient outcomes with AI-driven clinical documentation, analytics, and revenue cycle management.
+                        </p>
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-green-600"></i> Clinical Documentation AI</li>
+                            <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-green-600"></i> Patient Analytics</li>
+                            <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-green-600"></i> Revenue Cycle AI</li>
+                            <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-green-600"></i> Population Health</li>
+                        </ul>
+                        <a href="booking.html" class="inline-flex items-center gap-2 text-[#111111] border-b border-[#111111] pb-1 hover:opacity-70">Request Demo <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                    </div>
+                    <div class="bg-[#fafafa] p-8 md:p-12 rounded-xl">
+                        <p class="font-['JetBrains_Mono'] text-xs tracking-widest uppercase text-[#888888] mb-6">Case Study</p>
+                        <h3 class="font-['Sora'] text-2xl mb-4">Predictive Patient Analytics</h3>
+                        <p class="text-[#272a30] mb-6">ML-powered predictive models integrated with EHR for early intervention.</p>
+                        <div class="grid grid-cols-2 gap-8 pt-8 border-t border-[#e8e8ec]">
+                            <div><p class="text-3xl font-light">62%</p><p class="text-xs text-[#888]">Reduced Readmissions</p></div>
+                            <div><p class="text-3xl font-light">$3.1M</p><p class="text-xs text-[#888]">Annual Savings</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Finance -->
+        <section class="border-b-[2px] border-[#c8c8c8] py-24 px-6 md:px-12">
+            <div class="max-w-[1440px] mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                    <div>
+                        <p class="font-['JetBrains_Mono'] text-xs tracking-widest uppercase text-[#888888] mb-4">Financial Services</p>
+                        <h2 class="font-['Sora'] text-4xl md:text-5xl tracking-tight mb-6">Intelligent Finance</h2>
+                        <p class="font-['Manrope'] text-xl text-[#272a30] mb-8">
+                            Secure your operations with AI-powered fraud detection, risk assessment, and compliance automation.
+                        </p>
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-green-600"></i> Fraud Detection</li>
+                            <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-green-600"></i> Risk Assessment</li>
+                            <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-green-600"></i> Process Automation</li>
+                            <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-green-600"></i> Compliance AI</li>
+                        </ul>
+                        <a href="booking.html" class="inline-flex items-center gap-2 text-[#111111] border-b border-[#111111] pb-1 hover:opacity-70">Request Demo <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                    </div>
+                    <div class="bg-[#fafafa] p-8 md:p-12 rounded-xl">
+                        <p class="font-['JetBrains_Mono'] text-xs tracking-widest uppercase text-[#888888] mb-6">Case Study</p>
+                        <h3 class="font-['Sora'] text-2xl mb-4">Fraud Detection Engine</h3>
+                        <p class="text-[#272a30] mb-6">Real-time anomaly detection with adaptive learning for zero-day threat identification.</p>
+                        <div class="grid grid-cols-2 gap-8 pt-8 border-t border-[#e8e8ec]">
+                            <div><p class="text-3xl font-light">99.7%</p><p class="text-xs text-[#888]">Fraud Detection</p></div>
+                            <div><p class="text-3xl font-light">$15M+</p><p class="text-xs text-[#888]">Fraud Prevented</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Logistics -->
+        <section class="border-b-[2px] border-[#c8c8c8] py-24 px-6 md:px-12">
+            <div class="max-w-[1440px] mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                    <div>
+                        <p class="font-['JetBrains_Mono'] text-xs tracking-widest uppercase text-[#888888] mb-4">Logistics & Supply Chain</p>
+                        <h2 class="font-['Sora'] text-4xl md:text-5xl tracking-tight mb-6">Smart Logistics</h2>
+                        <p class="font-['Manrope'] text-xl text-[#272a30] mb-8">
+                            Optimize routes, manage fleets, and streamline warehouse operations with AI.
+                        </p>
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-green-600"></i> Route Optimization</li>
+                            <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-green-600"></i> Fleet Management</li>
+                            <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-green-600"></i> Warehouse AI</li>
+                            <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-green-600"></i> Demand Planning</li>
+                        </ul>
+                        <a href="booking.html" class="inline-flex items-center gap-2 text-[#111111] border-b border-[#111111] pb-1 hover:opacity-70">Request Demo <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                    </div>
+                    <div class="bg-[#fafafa] p-8 md:p-12 rounded-xl">
+                        <p class="font-['JetBrains_Mono'] text-xs tracking-widest uppercase text-[#888888] mb-6">Case Study</p>
+                        <h3 class="font-['Sora'] text-2xl mb-4">Global Fleet Orchestration</h3>
+                        <p class="text-[#272a30] mb-6">Real-time cognitive route optimization across 4,000+ assets.</p>
+                        <div class="grid grid-cols-2 gap-8 pt-8 border-t border-[#e8e8ec]">
+                            <div><p class="text-3xl font-light">45%</p><p class="text-xs text-[#888]">Efficiency Gain</p></div>
+                            <div><p class="text-3xl font-light">$4.2M</p><p class="text-xs text-[#888]">Savings Year 1</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <section class="bg-[#111111] text-white py-24 px-6 md:px-12">
+        <div class="max-w-[1440px] mx-auto text-center">
+            <h2 class="font-['Sora'] text-4xl md:text-5xl tracking-tight mb-8">Ready to transform your industry?</h2>
+            <p class="font-['Manrope'] text-xl text-[#c8c8c8] mb-12 max-w-2xl mx-auto">
+                Let's discuss how AI can revolutionize your operations.
+            </p>
+            <a href="booking.html" class="bg-white text-[#111111] rounded-full px-8 py-4 font-medium hover:bg-gray-200 transition-colors inline-flex items-center gap-3">
+                Book a Consultation <i data-lucide="arrow-right" class="w-5 h-5"></i>
+            </a>
+        </div>
+    </section>
+
+    <footer class="bg-[#111111] text-white pt-24 pb-12 border-t border-[#272a30]">
+        <div class="max-w-[1440px] mx-auto px-6 md:px-12 flex flex-col gap-24">
+            <div class="flex flex-col md:flex-row justify-between items-start gap-12">
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-white">
+                            <path d="M4 12L12 4L20 12L12 20L4 12Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                            <path d="M4 12H20" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                        <span class="font-['Sora'] text-2xl tracking-tight">hellopod</span>
+                    </div>
+                    <p class="font-['Manrope'] text-xl text-[#888888]">The AI Reimagination Company.</p>
+                </div>
+                <div class="flex items-center gap-6">
+                    <span class="font-['JetBrains_Mono'] text-xs tracking-widest uppercase text-[#888888]">Follow us on</span>
+                    <div class="flex gap-5">
+                        <a href="#" class="text-[#c8c8c8] hover:text-white transition-colors"><i data-lucide="twitter" class="w-5 h-5"></i></a>
+                        <a href="#" class="text-[#c8c8c8] hover:text-white transition-colors"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
+                        <a href="#" class="text-[#c8c8c8] hover:text-white transition-colors"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-[#272a30] flex flex-col md:flex-row justify-between items-center gap-6 font-['Manrope'] text-xs text-[#888888]">
+                <p>© 2026 HelloPod. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons({ attrs: { 'stroke-width': 1.5 } });
+    </script>
+</body>
+</html>
